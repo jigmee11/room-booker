@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 const Message = new mongoose.Schema({
   message: {
     type: String,
@@ -20,7 +20,7 @@ const Message = new mongoose.Schema({
   // }
 });
 
-export const Event = new mongoose.Schema({
+exports.Event = new mongoose.Schema({
   title: {
     type: String,
     required: true,
